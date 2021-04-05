@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/dword-design/base-config-docker/compare/v1.0.1...v1.1.0) (2021-04-05)
+
+
+### Features
+
+* deploy to docker hub ([c48866e](https://github.com/dword-design/base-config-docker/commit/c48866efb28f015ef5d7fc1aa927f3091f904f03))
+
 ## [1.0.1](https://github.com/dword-design/base-config-docker/compare/v1.0.0...v1.0.1) (2021-04-05)
 
 
