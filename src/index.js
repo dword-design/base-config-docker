@@ -9,6 +9,10 @@ const name = parsePkgName(packageConfig.name).name
 export default {
   allowedMatches: ['Dockerfile', 'index.usesdocker.spec.js'],
   ...(!packageConfig.private && {
+    deployEnv: {
+      DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}',
+      DOCKER_USERNAME: '${{ secrets.DOCKER_USERNAME }}',
+    },
     deployPlugins: [
       [
         packageName`semantic-release-docker`,
