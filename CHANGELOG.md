@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/dword-design/base-config-docker/compare/v1.1.0...v1.1.1) (2021-04-05)
+
+
+### Bug Fixes
+
+* add deploy env ([7a12026](https://github.com/dword-design/base-config-docker/commit/7a1202661b70a429f91affefe466eee8cddca31a))
+
 # [1.1.0](https://github.com/dword-design/base-config-docker/compare/v1.0.1...v1.1.0) (2021-04-05)
 
 
