@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index works 1`] = `
+Object {
+  "plugins": Array [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    Array [
+      "@semantic-release/npm",
+      Object {
+        "npmPublish": false,
+      },
+    ],
+    Array [
+      "semantic-release-docker",
+      Object {
+        "name": "dworddesign/foo",
+      },
+    ],
+    "@semantic-release/github",
+    Array [
+      "@semantic-release/git",
+      Object {
+        "message": "chore: \${nextRelease.version} [skip ci]
+
+\${nextRelease.notes}",
+      },
+    ],
+  ],
+}
+`;
