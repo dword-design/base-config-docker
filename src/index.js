@@ -17,7 +17,7 @@ export default {
     },
     deployPlugins: [
       [
-        '@semantic-release/exec',
+        packageName`@semantic-release/exec`,
         {
           prepareCmd: `docker build --file index.dockerfile --tag ${imageName} .`,
         },
