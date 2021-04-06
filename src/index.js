@@ -6,8 +6,10 @@ const packageConfig = loadPkg.sync()
 
 const name = parsePkgName(packageConfig.name).name
 
+const imageName = `dworddesign/${name.replace(/^docker-/, '')}`
+
 export default {
-  allowedMatches: ['Dockerfile', 'index.usesdocker.spec.js'],
+  allowedMatches: ['index.dockerfile', 'index.usesdocker.spec.js'],
   ...(!packageConfig.private && {
     deployEnv: {
       DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}',
@@ -15,9 +17,15 @@ export default {
     },
     deployPlugins: [
       [
+        '@semantic-release/exec',
+        {
+          prepareCmd: `docker build --file index.dockerfile --tag ${imageName} .`,
+        },
+      ],
+      [
         packageName`semantic-release-docker`,
         {
-          name: `dworddesign/${name.replace(/^docker-/, '')}`,
+          name: imageName,
         },
       ],
     ],
