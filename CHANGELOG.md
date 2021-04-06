@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/dword-design/base-config-docker/compare/v1.1.1...v1.1.2) (2021-04-06)
+
+
+### Bug Fixes
+
+* use index.dockerfile ([#1](https://github.com/dword-design/base-config-docker/issues/1)) ([2f91ec8](https://github.com/dword-design/base-config-docker/commit/2f91ec8408f401a0d0fd3e5b5e78b1f7a450d0ec))
+
 ## [1.1.1](https://github.com/dword-design/base-config-docker/compare/v1.1.0...v1.1.1) (2021-04-05)
 
 
