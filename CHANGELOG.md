@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/dword-design/base-config-docker/compare/v1.1.2...v1.1.3) (2021-04-06)
+
+
+### Bug Fixes
+
+* add @semantic-release/exec ([bf9ac10](https://github.com/dword-design/base-config-docker/commit/bf9ac109b559e706d843c73448c3a8ef8e810d96))
+
 ## [1.1.2](https://github.com/dword-design/base-config-docker/compare/v1.1.1...v1.1.2) (2021-04-06)
 
 
