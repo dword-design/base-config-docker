@@ -1,10 +1,10 @@
 import packageName from 'depcheck-package-name'
 import loadPkg from 'load-pkg'
-import parsePkgName from 'parse-pkg-name'
+import parsePackagejsonName from 'parse-packagejson-name'
 
 const packageConfig = loadPkg.sync()
 
-const name = parsePkgName(packageConfig.name).name
+const name = parsePackagejsonName(packageConfig.name).fullName
 
 const imageName = `dworddesign/${name.replace(/^docker-/, '')}`
 

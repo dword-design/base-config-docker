@@ -23,7 +23,7 @@
     "@semantic-release/exec": "^5.0.0",
     "depcheck-package-name": "^1.0.5",
     "load-pkg": "^4.0.0",
-    "parse-pkg-name": "^2.0.0",
+    "parse-packagejson-name": "^1.0.1",
     "semantic-release-docker": "^2.2.0"
   },
   "devDependencies": {
