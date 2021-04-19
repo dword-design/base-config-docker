@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/dword-design/base-config-docker/compare/v1.1.4...v1.1.5) (2021-04-19)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#3](https://github.com/dword-design/base-config-docker/issues/3)) ([71bec82](https://github.com/dword-design/base-config-docker/commit/71bec8270fd8c45f0b2c7201412e9f81321102f4))
+
 ## [1.1.4](https://github.com/dword-design/base-config-docker/compare/v1.1.3...v1.1.4) (2021-04-12)
 
 
