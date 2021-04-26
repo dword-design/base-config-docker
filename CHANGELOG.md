@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/dword-design/base-config-docker/compare/v1.1.7...v1.1.8) (2021-04-26)
+
+
+### Bug Fixes
+
+* update dependency with-local-tmp-dir to v3 ([#6](https://github.com/dword-design/base-config-docker/issues/6)) ([eaa9c4d](https://github.com/dword-design/base-config-docker/commit/eaa9c4d7306faf0ee84d399d649cdc8bb6a6b998))
+
 ## [1.1.7](https://github.com/dword-design/base-config-docker/compare/v1.1.6...v1.1.7) (2021-04-22)
 
 
