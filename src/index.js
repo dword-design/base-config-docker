@@ -10,6 +10,7 @@ const imageName = `dworddesign/${name.replace(/^docker-/, '')}`
 
 export default {
   allowedMatches: ['index.dockerfile', 'index.usesdocker.spec.js'],
+  coverageFileExtensions: ['.dockerfile'],
   ...(!packageConfig.private && {
     deployEnv: {
       DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}',
