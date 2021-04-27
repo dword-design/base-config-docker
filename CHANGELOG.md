@@ -1,3 +1,10 @@
+## [1.1.9](https://github.com/dword-design/base-config-docker/compare/v1.1.8...v1.1.9) (2021-04-27)
+
+
+### Bug Fixes
+
+* add coverage file extensions ([#11](https://github.com/dword-design/base-config-docker/issues/11)) ([7556f82](https://github.com/dword-design/base-config-docker/commit/7556f82bf7c1c56ffa1cb63a4febb3e32f928b04))
+
 ## [1.1.8](https://github.com/dword-design/base-config-docker/compare/v1.1.7...v1.1.8) (2021-04-26)
 
 
