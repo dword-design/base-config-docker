@@ -1,3 +1,10 @@
+## [1.1.10](https://github.com/dword-design/base-config-docker/compare/v1.1.9...v1.1.10) (2021-04-28)
+
+
+### Bug Fixes
+
+* updated package.json[description] ([#9](https://github.com/dword-design/base-config-docker/issues/9)) ([1e12794](https://github.com/dword-design/base-config-docker/commit/1e127948f088812579728a758bba0e5604d1cdd8))
+
 ## [1.1.9](https://github.com/dword-design/base-config-docker/compare/v1.1.8...v1.1.9) (2021-04-27)
 
 
