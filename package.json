@@ -26,10 +26,13 @@
     "semantic-release-docker": "^2.2.0"
   },
   "devDependencies": {
-    "@dword-design/base": "^7.12.0",
+    "@dword-design/base": "^8.0.0",
     "execa": "^5.0.0",
     "output-files": "^1.1.24",
     "with-local-tmp-dir": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=12"
   },
   "publishConfig": {
     "access": "public"
