@@ -1,3 +1,10 @@
+## [1.1.14](https://github.com/dword-design/base-config-docker/compare/v1.1.13...v1.1.14) (2021-05-04)
+
+
+### Bug Fixes
+
+* update dependency output-files to v2 ([#15](https://github.com/dword-design/base-config-docker/issues/15)) ([bdf409c](https://github.com/dword-design/base-config-docker/commit/bdf409cb18af4865219944d35d1b47bb86e00a96))
+
 ## [1.1.13](https://github.com/dword-design/base-config-docker/compare/v1.1.12...v1.1.13) (2021-05-04)
 
 
