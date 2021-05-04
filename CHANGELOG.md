@@ -1,3 +1,10 @@
+## [1.1.12](https://github.com/dword-design/base-config-docker/compare/v1.1.11...v1.1.12) (2021-05-04)
+
+
+### Bug Fixes
+
+* update dependency depcheck-package-name to v2 ([#14](https://github.com/dword-design/base-config-docker/issues/14)) ([1e473ad](https://github.com/dword-design/base-config-docker/commit/1e473ad0fffee56bd7fadf139a156a39c6321b33))
+
 ## [1.1.11](https://github.com/dword-design/base-config-docker/compare/v1.1.10...v1.1.11) (2021-05-03)
 
 
