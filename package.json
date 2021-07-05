@@ -2,7 +2,7 @@
   "name": "@dword-design/base-config-docker",
   "version": "1.1.16",
   "repository": "dword-design/base-config-docker",
-  "funding": "https://www.buymeacoffee.com/dword",
+  "funding": "https://github.com/sponsors/dword-design",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@sebastianlandwehr.com>",
   "main": "dist/index.js",
