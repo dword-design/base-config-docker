@@ -1,3 +1,10 @@
+## [1.1.17](https://github.com/dword-design/base-config-docker/compare/v1.1.16...v1.1.17) (2021-07-06)
+
+
+### Bug Fixes
+
+* update config files ([933a38b](https://github.com/dword-design/base-config-docker/commit/933a38b26519aeade70d583a47844c907826ea33))
+
 ## [1.1.16](https://github.com/dword-design/base-config-docker/compare/v1.1.15...v1.1.16) (2021-06-14)
 
 
