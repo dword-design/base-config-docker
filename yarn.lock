@@ -8259,13 +8259,13 @@ redeyed@~2.1.0:
     esprima "~4.0.0"
 
 reflect.getprototypeof@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/reflect.getprototypeof/-/reflect.getprototypeof-1.0.1.tgz#f113f15e19d103d60b8d52ce7e0d45867efdddfc"
-  integrity sha512-z0FhUSaxXxnFQi+YyGfAvUJjCGPPwe0AO51LU/HtRLj/+a4LROrmSD6eYA3zr6aAK6GSbl8BCh/m5SAqUdAgTg==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/reflect.getprototypeof/-/reflect.getprototypeof-1.0.2.tgz#dd231808828913fd2198e151eb3e213d9dddf708"
+  integrity sha512-C1+ANgX50UkWlntmOJ8SD1VTuk28+7X1ackBdfXzLQG5+bmriEMHvBaor9YlotCfBHo277q/YWd/JKEOzr5Dxg==
   dependencies:
     call-bind "^1.0.2"
     define-properties "^1.1.3"
-    es-abstract "^1.18.6"
+    es-abstract "^1.19.1"
     get-intrinsic "^1.1.1"
     which-builtin-type "^1.1.1"
 
