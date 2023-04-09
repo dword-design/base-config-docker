@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/dword-design/base-config-docker/compare/v1.1.22...v2.0.0) (2023-04-09)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#71](https://github.com/dword-design/base-config-docker/issues/71)) ([8311b03](https://github.com/dword-design/base-config-docker/commit/8311b03162e84bbfa9871ddff345ff52aea1a4a0))
+
+
+### BREAKING CHANGES
+
+* drop node 12, move to esm
+
 ## [1.1.22](https://github.com/dword-design/base-config-docker/compare/v1.1.21...v1.1.22) (2023-03-16)
 
 
