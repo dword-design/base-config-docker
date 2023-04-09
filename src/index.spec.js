@@ -1,21 +1,18 @@
-import execa from 'execa'
-import outputFiles from 'output-files'
-import P from 'path'
+import { Base } from '@dword-design/base'
+import fs from 'fs-extra'
 import withLocalTmpDir from 'with-local-tmp-dir'
 
 export default {
   works() {
     return withLocalTmpDir(async () => {
-      await outputFiles({
-        'node_modules/base-config-self/index.js':
-          "module.exports = require('../../../src')",
-        'package.json': JSON.stringify({
-          baseConfig: 'self',
+      await fs.outputFile(
+        'package.json',
+        JSON.stringify({
           name: '@dword-design/docker-foo',
         }),
-      })
-      await execa.command('base prepare')
-      expect(require(P.resolve('.releaserc.json'))).toMatchSnapshot(this)
+      )
+      await new Base({ name: '../src/index.js' }).prepare()
+      expect(await fs.readJson('.releaserc.json')).toMatchSnapshot(this)
     })
   },
 }
