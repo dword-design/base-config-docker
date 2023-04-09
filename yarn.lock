@@ -1324,12 +1324,19 @@
     execa "^5.0.0"
     make-cli "^2.0.0"
 
-"@dword-design/endent@^1.0.0":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@dword-design/endent/-/endent-1.0.1.tgz#847c775fb721142a5d3673b2e0ef383850e1040f"
-  integrity sha512-F8xRP8hTVd8JclhvmZskVN6QMLMge+kYCPOZ2Xsx7FJbs2dyD9J1cwDNsBAVujBfK2aKeznI/eqbHVK2XxCA2g==
+"@dword-design/dedent@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@dword-design/dedent/-/dedent-0.7.0.tgz#bd8b674213339b77c81fd0697c1da1e50fcc1d7c"
+  integrity sha512-OFmAmzKiDUh9m7WRMYcoEOPI7b5tS5hdqQmtKDwF+ZssVJv8a+GHo9VOtFsmlw3h8Roh/9QzFWIsjSFZyQUMdg==
   dependencies:
-    dedent "github:dword-design/dedent#fork"
+    babel-plugin-add-module-exports "^1.0.2"
+
+"@dword-design/endent@^1.0.0":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@dword-design/endent/-/endent-1.4.1.tgz#b1b38b87048ff43b17060e075c44896ebd414ecd"
+  integrity sha512-e2sCTzth5kyRdM0o+yEb5wBVzUdJL8Y6HblRGRV0Bif0knf1ZjRLhUjdCrqM+Muirb68X/xJzgdRDJVmLqgXGA==
+  dependencies:
+    "@dword-design/dedent" "^0.7.0"
     fast-json-parse "^1.0.3"
     objectorarray "^1.0.3"
 
@@ -1369,7 +1376,17 @@
     "@dword-design/functions" "^4.0.0"
     babel-plugin-module-resolver "^4.0.0"
 
-"@dword-design/functions@^4.0.0", "@dword-design/functions@^4.0.7":
+"@dword-design/functions@^4.0.0":
+  version "4.1.7"
+  resolved "https://registry.yarnpkg.com/@dword-design/functions/-/functions-4.1.7.tgz#40c8aa7ce0e1c0e345b080ebdc05f3b68d53259d"
+  integrity sha512-kc7bzBKZasf0icxKldgB7dkpd1mcEQkPz8c0BP5Wuxy63bMYs+kNWbywFT+xNBWDT6N9cdTczHwBuVBgc8ZU0A==
+  dependencies:
+    "@dword-design/endent" "^1.0.0"
+    delay "^5.0.0"
+    lodash "^4.17.15"
+    tinycolor2 "^1.4.1"
+
+"@dword-design/functions@^4.0.7":
   version "4.0.7"
   resolved "https://registry.yarnpkg.com/@dword-design/functions/-/functions-4.0.7.tgz#678a0402c2890c6061a9605df0ac7153c06be469"
   integrity sha512-Q225czTokHcXIUhe+yVlHuhnETdfKyJptNAfg2LnoB/HXUxQyb76+kwpBzwlldOQ7FJl+RDATj4zTRBh4puesA==
@@ -3436,13 +3453,6 @@ dedent@0.7.0:
   resolved "https://registry.yarnpkg.com/dedent/-/dedent-0.7.0.tgz#2495ddbaf6eb874abb0e1be9df22d2e5a544326c"
   integrity sha1-JJXduvbrh0q7Dhvp3yLS5aVEMmw=
 
-"dedent@github:dword-design/dedent#fork":
-  version "0.7.0"
-  uid c8d46e5017d60504657c2d01b59082c0329a12a7
-  resolved "https://codeload.github.com/dword-design/dedent/tar.gz/c8d46e5017d60504657c2d01b59082c0329a12a7"
-  dependencies:
-    babel-plugin-add-module-exports "^1.0.2"
-
 deep-extend@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.6.0.tgz#c4fa7c95404a17a9c3e8ca7e1537312b736330ac"
@@ -4650,6 +4660,15 @@ fs-extra@^10.0.0:
     jsonfile "^6.0.1"
     universalify "^2.0.0"
 
+fs-extra@^11.1.0:
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.1.1.tgz#da69f7c39f3b002378b0954bb6ae7efdc0876e2d"
+  integrity sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==
+  dependencies:
+    graceful-fs "^4.2.0"
+    jsonfile "^6.0.1"
+    universalify "^2.0.0"
+
 fs-extra@^9.0.0:
   version "9.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
@@ -4952,10 +4971,15 @@ glur@^1.1.2:
   resolved "https://registry.yarnpkg.com/glur/-/glur-1.1.2.tgz#f20ea36db103bfc292343921f1f91e83c3467689"
   integrity sha1-8g6jbbEDv8KSNDkh8fkeg8NGdok=
 
-graceful-fs@*, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4, graceful-fs@^4.2.6, graceful-fs@^4.2.9:
+graceful-fs@*, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.2.4, graceful-fs@^4.2.6, graceful-fs@^4.2.9:
   version "4.2.10"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
   integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
+
+graceful-fs@^4.1.6, graceful-fs@^4.2.0:
+  version "4.2.11"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
+  integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
 
 growl@1.10.5:
   version "1.10.5"
@@ -7517,12 +7541,12 @@ os-tmpdir@~1.0.2:
   integrity sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=
 
 output-files@^2.0.0:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/output-files/-/output-files-2.0.10.tgz#1ed799cae3685a8d41b3d61e5952d1a4a7ca8171"
-  integrity sha512-5R6yGlEpu0kgno2/xYrmr0fX9nv608ygo2ge7ByVURjyIESHu7uzuWSaksEkOKzf6ZXWAzVQJjeRgSkX205eyQ==
+  version "2.0.20"
+  resolved "https://registry.yarnpkg.com/output-files/-/output-files-2.0.20.tgz#c440b22f39965a0b0d80e9104938f2ed4035a473"
+  integrity sha512-9O1a81QBzFKpbhLH55OiDEHH8LpTfgPtQemGKL3IIuft587lquWDAtAKEQl/spObkFgXo8I6TX2jEoh4gr4LMw==
   dependencies:
     "@dword-design/functions" "^4.0.0"
-    fs-extra "^10.0.0"
+    fs-extra "^11.1.0"
 
 p-each-series@^2.1.0:
   version "2.2.0"
@@ -9195,9 +9219,9 @@ tiny-relative-date@*:
   integrity sha512-MOQHpzllWxDCHHaDno30hhLfbouoYlOI8YlMNtvKe1zXbjEVhbcEovQxvZrPvtiYW630GQDoMMarCnjfyfHA+A==
 
 tinycolor2@^1.4.1:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.2.tgz#3f6a4d1071ad07676d7fa472e1fac40a719d8803"
-  integrity sha512-vJhccZPs965sV/L2sU4oRQVAos0pQXwsvTLkWYdqJ+a8Q5kPFzJTuOFwy7UniPli44NKQGAglksjvOcpo95aZA==
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.6.0.tgz#f98007460169b0263b97072c5ae92484ce02d09e"
+  integrity sha512-XPaBkWQJdsf3pLKJV9p4qN/S+fm2Oj8AIPo1BTUhg5oxkvm9+SVEGFdhyOz7tTdUTfvxMiAs4sp6/eZO2Ew+pw==
 
 tmatch@^2.0.1:
   version "2.0.1"
