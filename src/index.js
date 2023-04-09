@@ -2,32 +2,34 @@ import packageName from 'depcheck-package-name'
 import loadPkg from 'load-pkg'
 import parsePackagejsonName from 'parse-packagejson-name'
 
-const packageConfig = loadPkg.sync()
+export default () => {
+  const packageConfig = loadPkg.sync()
 
-const name = parsePackagejsonName(packageConfig.name).fullName
+  const name = parsePackagejsonName(packageConfig.name).fullName
 
-const imageName = `dworddesign/${name.replace(/^docker-/, '')}`
+  const imageName = `dworddesign/${name.replace(/^docker-/, '')}`
 
-export default {
-  allowedMatches: ['index.dockerfile', 'index.usesdocker.spec.js'],
-  ...(!packageConfig.private && {
-    deployEnv: {
-      DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}',
-      DOCKER_USERNAME: '${{ secrets.DOCKER_USERNAME }}',
-    },
-    deployPlugins: [
-      [
-        packageName`@semantic-release/exec`,
-        {
-          prepareCmd: `docker build --file index.dockerfile --tag ${imageName} .`,
-        },
+  return {
+    allowedMatches: ['index.dockerfile', 'index.usesdocker.spec.js'],
+    ...(!packageConfig.private && {
+      deployEnv: {
+        DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}',
+        DOCKER_USERNAME: '${{ secrets.DOCKER_USERNAME }}',
+      },
+      deployPlugins: [
+        [
+          packageName`@semantic-release/exec`,
+          {
+            prepareCmd: `docker build --file index.dockerfile --tag ${imageName} .`,
+          },
+        ],
+        [
+          packageName`semantic-release-docker`,
+          {
+            name: imageName,
+          },
+        ],
       ],
-      [
-        packageName`semantic-release-docker`,
-        {
-          name: imageName,
-        },
-      ],
-    ],
-  }),
+    }),
+  }
 }
