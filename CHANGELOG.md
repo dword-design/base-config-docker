@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/dword-design/base-config-docker/compare/v2.0.1...v2.0.2) (2023-04-11)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/base to v9.5.16 ([485a16e](https://github.com/dword-design/base-config-docker/commit/485a16ec3892689f5474eb93651ffb2bb7742dcb))
+
 ## [2.0.1](https://github.com/dword-design/base-config-docker/compare/v2.0.0...v2.0.1) (2023-04-10)
 
 
