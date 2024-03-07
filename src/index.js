@@ -18,17 +18,14 @@ export default () => {
       },
       deployPlugins: [
         [
-          packageName`@semantic-release/exec`,
-          {
-            prepareCmd: `docker build --file index.dockerfile --tag ${imageName} .`,
-          },
-        ],
-        [
           packageName`semantic-release-docker`,
           {
             name: imageName,
           },
         ],
+      ],
+      preDeploySteps: [
+        { run: `docker build --file index.dockerfile --tag ${imageName} .` },
       ],
     }),
   }
