@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/dword-design/base-config-docker/compare/v2.0.2...v3.0.0) (2024-03-07)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#85](https://github.com/dword-design/base-config-docker/issues/85)) ([f71d1d2](https://github.com/dword-design/base-config-docker/commit/f71d1d22da5464962cbafcddc394e7a3f7679eb3))
+
+
+### BREAKING CHANGES
+
+* node.js >= 18
+
 ## [2.0.2](https://github.com/dword-design/base-config-docker/compare/v2.0.1...v2.0.2) (2023-04-11)
 
 
