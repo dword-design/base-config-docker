@@ -1,3 +1,11 @@
+## [3.0.1](https://github.com/dword-design/base-config-docker/compare/v3.0.0...v3.0.1) (2025-05-27)
+
+
+### Bug Fixes
+
+* foo ([09dcbbe](https://github.com/dword-design/base-config-docker/commit/09dcbbe38564ad56422567db987226cba0eca7e5))
+* lock file maintenance ([#100](https://github.com/dword-design/base-config-docker/issues/100)) ([36dd5d8](https://github.com/dword-design/base-config-docker/commit/36dd5d8eecb4979dcf6eb1b91c197bc665b45dc4))
+
 # [3.0.0](https://github.com/dword-design/base-config-docker/compare/v2.0.2...v3.0.0) (2024-03-07)
 
 
