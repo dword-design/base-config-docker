@@ -22,7 +22,7 @@
     "test": "base test"
   },
   "dependencies": {
-    "depcheck-package-name": "^3.0.0",
+    "depcheck-package-name": "^5.0.0",
     "load-pkg": "^4.0.0",
     "parse-packagejson-name": "^1.0.1",
     "semantic-release-docker": "^2.2.0"
