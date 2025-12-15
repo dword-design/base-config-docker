@@ -6,7 +6,12 @@
   "license": "MIT",
   "author": "Sebastian Landwehr <info@sebastianlandwehr.com>",
   "type": "module",
-  "exports": "./dist/index.js",
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -19,20 +24,23 @@
     "lint": "base lint",
     "prepare": "base prepare",
     "prepublishOnly": "base prepublishOnly",
-    "test": "base test"
+    "test": "base test",
+    "typecheck": "base typecheck",
+    "verify": "base verify"
   },
   "dependencies": {
-    "depcheck-package-name": "^3.0.0",
-    "load-pkg": "^4.0.0",
-    "parse-packagejson-name": "^1.0.1",
+    "@dword-design/base": "^16.1.4",
+    "depcheck-package-name": "^5.0.0",
+    "parse-packagejson-name": "^1.1.0",
+    "read-pkg": "^10.0.0",
     "semantic-release-docker": "^2.2.0"
   },
   "devDependencies": {
-    "@dword-design/base": "^12.0.9"
+    "@playwright/test": "^1.57.0"
   },
   "packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977",
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   },
   "publishConfig": {
     "access": "public"
