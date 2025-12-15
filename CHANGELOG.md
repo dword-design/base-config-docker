@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/dword-design/base-config-docker/compare/v3.0.1...v4.0.0) (2025-12-15)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#112](https://github.com/dword-design/base-config-docker/issues/112)) ([d25c091](https://github.com/dword-design/base-config-docker/commit/d25c091078195758637ee0fbe38cf5a69f250af6))
+
+
+### BREAKING CHANGES
+
+* node >= 22
+
 ## [3.0.1](https://github.com/dword-design/base-config-docker/compare/v3.0.0...v3.0.1) (2025-05-27)
 
 
