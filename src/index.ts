@@ -1,13 +1,14 @@
+import { type Base, defineBaseConfig } from '@dword-design/base';
 import packageName from 'depcheck-package-name';
-import loadPkg from 'load-pkg';
 import parsePackagejsonName from 'parse-packagejson-name';
+import { readPackageSync } from 'read-pkg';
 
-export default () => {
-  const packageConfig = loadPkg.sync();
+export default defineBaseConfig(function (this: Base) {
+  const packageConfig = readPackageSync({ cwd: this.cwd });
   const name = parsePackagejsonName(packageConfig.name).fullName;
   const imageName = `dworddesign/${name.replace(/^docker-/, '')}`;
   return {
-    allowedMatches: ['index.dockerfile', 'index.spec.js'],
+    allowedMatches: ['index.dockerfile', 'index.spec.ts'],
     ...(!packageConfig.private && {
       deployEnv: {
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}',
@@ -21,4 +22,4 @@ export default () => {
       ],
     }),
   };
-};
+});
