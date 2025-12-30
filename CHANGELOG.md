@@ -1,3 +1,10 @@
+## [4.0.2](https://github.com/dword-design/base-config-docker/compare/v4.0.1...v4.0.2) (2025-12-30)
+
+
+### Bug Fixes
+
+* doc ([1eb8350](https://github.com/dword-design/base-config-docker/commit/1eb8350139c7308ed1edccccee915b91a2940eba))
+
 ## [4.0.1](https://github.com/dword-design/base-config-docker/compare/v4.0.0...v4.0.1) (2025-12-30)
 
 
