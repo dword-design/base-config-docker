@@ -8,8 +8,8 @@ export default defineBaseConfig(function (this: Base) {
   const name = parsePackagejsonName(packageConfig.name).fullName;
   const imageName = `dworddesign/${name.replace(/^docker-/, '')}`;
   return {
-    useJobMatrix: false,
     allowedMatches: ['index.dockerfile', 'index.spec.ts'],
+    useJobMatrix: false,
     ...(!packageConfig.private && {
       deployEnv: {
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}',
