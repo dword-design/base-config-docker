@@ -9,7 +9,7 @@ export default defineBaseConfig(function (this: Base) {
   const imageName = `dworddesign/${name.replace(/^docker-/, '')}`;
   return {
     allowedMatches: ['index.dockerfile', 'index.spec.ts'],
-    useJobMatrix: false,
+    useJobMatrix: false, // TODO: Check if we can support macOS and Windows to support Docker in GitHub Actions
     ...(!packageConfig.private && {
       deployEnv: {
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}',
