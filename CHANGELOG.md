@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/dword-design/base-config-docker/compare/v4.0.0...v4.0.1) (2025-12-30)
+
+
+### Bug Fixes
+
+* disable job matrix ([799aab1](https://github.com/dword-design/base-config-docker/commit/799aab1b23b4e417e98c679b52a8ec7752f7ffe6))
+
 # [4.0.0](https://github.com/dword-design/base-config-docker/compare/v3.0.1...v4.0.0) (2025-12-15)
 
 
