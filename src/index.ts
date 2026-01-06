@@ -6,7 +6,7 @@ import { readPackageSync } from 'read-pkg';
 export default defineBaseConfig(function (this: Base) {
   const packageConfig = readPackageSync({ cwd: this.cwd });
   const name = parsePackagejsonName(packageConfig.name).fullName;
-  const imageName = `dworddesign/${name.replace(/^docker-/, '')}`;
+  const imageName = name.replace(/^docker-/, '');
   return {
     allowedMatches: ['index.dockerfile', 'index.spec.ts'],
     useJobMatrix: false, // TODO: Check if we can support macOS and Windows to support Docker in GitHub Actions
@@ -22,6 +22,7 @@ export default defineBaseConfig(function (this: Base) {
             dockerFile: 'index.dockerfile',
             dockerImage: imageName,
             dockerPlatform: ['linux/amd64', 'linux/arm64'],
+            dockerProject: 'dworddesign',
           },
         ],
       ],
