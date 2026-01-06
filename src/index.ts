@@ -21,7 +21,7 @@ export default defineBaseConfig(function (this: Base) {
           {
             dockerFile: 'index.dockerfile',
             dockerImage: imageName,
-            dockerPlatform: ['linux/amd64', 'linux/arm64'],
+            dockerPlatform: ['linux/amd64', 'linux/arm64'], // TODO: Doc that there was an issue where a linux build lead to line-height being rounded down when testing on macOS inside the Docker container
             dockerProject: 'dworddesign',
           },
         ],
