@@ -1,3 +1,10 @@
+## [4.0.5](https://github.com/dword-design/base-config-docker/compare/v4.0.4...v4.0.5) (2026-01-06)
+
+
+### Bug Fixes
+
+* setup qemu and buildx ([821de68](https://github.com/dword-design/base-config-docker/commit/821de68639b07bbc473025dbe2a50a71e4f544c3))
+
 ## [4.0.4](https://github.com/dword-design/base-config-docker/compare/v4.0.3...v4.0.4) (2026-01-06)
 
 
