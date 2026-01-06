@@ -1,3 +1,10 @@
+## [4.0.3](https://github.com/dword-design/base-config-docker/compare/v4.0.2...v4.0.3) (2026-01-06)
+
+
+### Bug Fixes
+
+* multi-platform support ([03fee5e](https://github.com/dword-design/base-config-docker/commit/03fee5ea6f75aee8f84f6dbce0f71d3c84cb503f))
+
 ## [4.0.2](https://github.com/dword-design/base-config-docker/compare/v4.0.1...v4.0.2) (2025-12-30)
 
 
