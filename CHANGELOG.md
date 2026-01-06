@@ -1,3 +1,10 @@
+## [4.0.6](https://github.com/dword-design/base-config-docker/compare/v4.0.5...v4.0.6) (2026-01-06)
+
+
+### Bug Fixes
+
+* fix docker project for semantic release plugin ([b017309](https://github.com/dword-design/base-config-docker/commit/b01730900a62add8cdd70f3b0ca01a26464a75a8))
+
 ## [4.0.5](https://github.com/dword-design/base-config-docker/compare/v4.0.4...v4.0.5) (2026-01-06)
 
 
