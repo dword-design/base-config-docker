@@ -12,8 +12,8 @@ export default defineBaseConfig(function (this: Base) {
     useJobMatrix: false, // TODO: Check if we can support macOS and Windows to support Docker in GitHub Actions
     ...(!packageConfig.private && {
       deployEnv: {
-        DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}',
-        DOCKER_USERNAME: '${{ secrets.DOCKER_USERNAME }}',
+        DOCKER_REGISTRY_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}',
+        DOCKER_REGISTRY_USER: '${{ secrets.DOCKER_USERNAME }}',
       },
       deployPlugins: [
         [
