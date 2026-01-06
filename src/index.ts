@@ -16,7 +16,14 @@ export default defineBaseConfig(function (this: Base) {
         DOCKER_USERNAME: '${{ secrets.DOCKER_USERNAME }}',
       },
       deployPlugins: [
-        [packageName`semantic-release-docker`, { name: imageName }],
+        [
+          packageName`@codedependant/semantic-release-docker`,
+          {
+            dockerFile: 'index.dockerfile',
+            dockerImage: imageName,
+            dockerPlatform: ['linux/amd64', 'linux/arm64'],
+          },
+        ],
       ],
       preDeploySteps: [
         { run: `docker build --file index.dockerfile --tag ${imageName} .` },
