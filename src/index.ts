@@ -26,7 +26,8 @@ export default defineBaseConfig(function (this: Base) {
         ],
       ],
       preDeploySteps: [
-        { run: `docker build --file index.dockerfile --tag ${imageName} .` },
+        { name: 'Set up QEMU', uses: 'docker/setup-qemu-action@v3' },
+        { name: 'Set up Docker Buildx', uses: 'docker/setup-buildx-action@v3' },
       ],
     }),
   };
