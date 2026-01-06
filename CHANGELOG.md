@@ -1,3 +1,10 @@
+## [4.0.4](https://github.com/dword-design/base-config-docker/compare/v4.0.3...v4.0.4) (2026-01-06)
+
+
+### Bug Fixes
+
+* fix docker env variable names ([1a7c12e](https://github.com/dword-design/base-config-docker/commit/1a7c12e4fbd7acbd82a5c12ed3314ac7e013386b))
+
 ## [4.0.3](https://github.com/dword-design/base-config-docker/compare/v4.0.2...v4.0.3) (2026-01-06)
 
 
