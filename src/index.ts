@@ -9,7 +9,7 @@ export default defineBaseConfig(function (this: Base) {
   const imageName = name.replace(/^docker-/, '');
   return {
     allowedMatches: ['index.dockerfile', 'index.spec.ts'],
-    useJobMatrix: false, // TODO: Check if we can support macOS and Windows to support Docker in GitHub Actions
+    windows: false, // TODO: Check if we can support macOS and Windows to support Docker in GitHub Actions
     ...(!packageConfig.private && {
       deployEnv: {
         DOCKER_REGISTRY_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}',
