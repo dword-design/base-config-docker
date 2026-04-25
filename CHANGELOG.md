@@ -1,3 +1,10 @@
+## [4.0.8](https://github.com/dword-design/base-config-docker/compare/v4.0.7...v4.0.8) (2026-04-25)
+
+
+### Bug Fixes
+
+* remove unneeded useJobMatrix ([7198a53](https://github.com/dword-design/base-config-docker/commit/7198a53b80c5641e37e97e45826867b4f52d55ab))
+
 ## [4.0.7](https://github.com/dword-design/base-config-docker/compare/v4.0.6...v4.0.7) (2026-01-06)
 
 
